@@ -1,0 +1,17 @@
+# Environment & Python
+venv/
+.venv/
+env/
+*.pyc
+__pycache__/
+
+# Data Files (Mandatory for the challenge)
+data/ 
+*.csv 
+
+# Jupyter/Notebooks
+.ipynb_checkpoints/ 
+
+# IDE/Editor files (e.g., VS Code)
+.vscode/
+.idea/
