@@ -5,9 +5,6 @@ env/
 *.pyc
 __pycache__/
 
-# Data Files (Mandatory for the challenge)
-data/ 
-*.csv 
 
 # Jupyter/Notebooks
 .ipynb_checkpoints/ 
