@@ -1,26 +1,37 @@
-# 🌞 Solar Challenge Week 0 - Comprehensive Analysis Guide
+# 🌞 Solar Challenge Week 0
 
-![GitHub](https://img.shields.io/badge/python-3.12-blue)
-![GitHub](https://img.shields.io/badge/status-active-success)
-![GitHub](https://img.shields.io/badge/contributions-welcome-brightgreen)
+![Python](https://img.shields.io/badge/python-3.12-blue?style=flat-square)
+![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
+![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square)
 
-🚀 Live Demo
+---
 
-🌐 Interactive Dashboard: https://solar-challenge-week0-derese-ewunet.streamlit.app/
+## 🚀 Live Demo
+
+🔗 [Open Interactive Dashboard](https://solar-challenge-week0-derese-ewunet.streamlit.app/){:target="_blank"}
+
 ---
 
 ## 📋 Project Overview
 
-A comprehensive data analysis project exploring solar energy potential across three West African countries: **Benin, Sierra Leone, and Togo**. This project demonstrates end-to-end data science workflow from raw data processing to interactive visualization.
+**Solar Challenge Week 0** is a complete data science project exploring solar energy potential across **Benin, Sierra Leone, and Togo**.
+This repository demonstrates an **end-to-end workflow** from data cleaning and exploratory analysis to interactive visualization.
+
+Key Highlights:
+
+* Data profiling and cleaning
+* Country-specific exploratory analysis
+* Cross-country comparison
+* Interactive Streamlit dashboard
 
 ---
 
-## 🚀 Quick Start
+## 🛠️ Quick Start
 
 ### Prerequisites
-- Python 3.11+
-- Git
-- GitHub Account
+
+* Python 3.11+
+* Git & GitHub account
 
 ### Installation & Setup
 
@@ -29,13 +40,11 @@ A comprehensive data analysis project exploring solar energy potential across th
 git clone https://github.com/DE143/solar-challenge-week0.git
 cd solar-challenge-week0
 
-# Create and activate virtual environment
+# Create & activate virtual environment
 python -m venv venv
 
 # Windows
 venv\Scripts\activate
-
-
 
 # Upgrade pip and install dependencies
 pip install --upgrade pip
@@ -44,17 +53,17 @@ pip install -r requirements.txt
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 solar-challenge-week0/
-├── 📊 notebooks/           # Jupyter notebooks for analysis
+├── 📊 notebooks/          # Jupyter notebooks for analysis
 │   ├── benin_eda.ipynb
 │   ├── sierra_leone_eda.ipynb
 │   ├── togo_eda.ipynb
 │   └── compare_countries.ipynb
-├── 🔧 scripts/             # Utility scripts
-├── 🎯 app/                 # Streamlit dashboard
+├── 🔧 scripts/            # Utility scripts
+├── 🎯 app/                # Streamlit dashboard
 │   ├── main.py
 │   └── utils.py
 ├── 📈 data/               # Raw and processed datasets
@@ -67,53 +76,61 @@ solar-challenge-week0/
 
 ## 🛠️ Development Workflow
 
-### Phase 1: Project Setup ✅
-- [x] Repository initialization
-- [x] Python environment configuration
-- [x] CI/CD pipeline setup
-- [x] Project structure creation
+### Phase 1: Setup ✅
+
+* Repository initialization
+* Python environment configuration
+* CI/CD pipeline setup
+* Project structure creation
 
 ### Phase 2: Country-Specific EDA 🔍
-- **Benin Analysis** - Complete data exploration and cleaning
-- **Sierra Leone Analysis** - Statistical profiling and visualization
-- **Togo Analysis** - Time series and correlation analysis
+
+* **Benin**: Complete data exploration & cleaning
+* **Sierra Leone**: Statistical profiling & visualization
+* **Togo**: Time series & correlation analysis
 
 ### Phase 3: Cross-Country Comparison 📊
-- Comparative statistical analysis
-- Performance benchmarking
-- Regional insights generation
 
-### Phase 4: Interactive Dashboard 🎯 (Optional)
-- Real-time data visualization
-- Interactive filtering capabilities
-- Export functionality
+* Comparative statistics
+* Regional insights
+* Performance benchmarking
+
+### Phase 4: Interactive Dashboard 🎯 *(Optional)*
+
+* Real-time data visualization
+* Interactive filtering
+* Export-ready charts
 
 ---
 
 ## 📈 Analysis Features
 
 ### Data Processing
-- **Missing Value Handling**: Median imputation strategies
-- **Outlier Detection**: Z-score based anomaly identification
-- **Data Validation**: Quality assurance checks
+
+* Missing value handling (median imputation)
+* Outlier detection (Z-score)
+* Data validation & quality checks
 
 ### Statistical Analysis
-- Descriptive statistics (mean, median, standard deviation)
-- Correlation analysis and heatmaps
-- Time series decomposition
-- Distribution analysis
+
+* Descriptive statistics (mean, median, SD)
+* Correlation heatmaps
+* Time series decomposition
+* Distribution analysis
 
 ### Visualization
-- Time series plots for GHI, DNI, DHI, and temperature
-- Comparative boxplots across countries
-- Interactive dashboards with Streamlit
-- Export-ready charts and graphs
+
+* Time series plots (GHI, DNI, DHI, Temperature)
+* Comparative boxplots
+* Streamlit interactive dashboards
+* Export-ready charts
 
 ---
 
 ## 🔄 Git Workflow & Branch Strategy
 
-### Branch Naming Convention
+**Branch Naming Convention**
+
 ```
 feature/description    # New features
 eda/country-name       # Exploratory data analysis
@@ -121,16 +138,17 @@ fix/description        # Bug fixes
 docs/description       # Documentation updates
 ```
 
-### Example Workflow
+**Example Workflow**
+
 ```bash
-# Create feature branch
+# Create branch
 git checkout -b eda/benin-analysis
 
-# Develop and commit frequently
+# Commit often
 git add notebooks/benin_eda.ipynb
 git commit -m "feat: add GHI time series analysis for Benin"
 
-# Push and create PR
+# Push & open PR
 git push origin eda/benin-analysis
 ```
 
@@ -138,55 +156,70 @@ git push origin eda/benin-analysis
 
 ## ⚙️ Continuous Integration
 
-Our GitHub Actions workflow ensures:
-- ✅ Python 3.12 compatibility
-- ✅ Dependency resolution
-- ✅ Code integrity checks
-- ✅ Automated testing readiness
+* Python 3.12 compatibility ✅
+* Dependency resolution ✅
+* Code integrity checks ✅
+* Automated tests readiness ✅
 
-**Status**: ![CI](https://github.com/DE143/solar-challenge-week0/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/DE143/solar-challenge-week0/actions/workflows/ci.yml/badge.svg)
 
 ---
 
 ## 🎯 Key Deliverables
 
-| Component | Status | Description |
-|-----------|--------|-------------|
-| Benin EDA | ✅ | Complete exploratory analysis |
-| Sierra Leone EDA | ✅ | Statistical profiling |
-| Togo EDA | ✅ | Correlation & time series |
-| Cross-Country Comparison | 🔄 | Comparative insights |
-| Streamlit Dashboard | ⏳ | Interactive visualization |
+| Component                | Status | Description                   |
+| ------------------------ | ------ | ----------------------------- |
+| Benin EDA                | ✅      | Complete exploratory analysis |
+| Sierra Leone EDA         | ✅      | Statistical profiling         |
+| Togo EDA                 | ✅      | Correlation & time series     |
+| Cross-Country Comparison | 🔄     | Comparative insights          |
+| Streamlit Dashboard      | ⏳      | Interactive visualization     |
 
 ---
 
-## 📊 Data Metrics Analyzed
+## 📊 Data Metrics
 
-- **GHI (Global Horizontal Irradiance)**: Total solar radiation received
-- **DNI (Direct Normal Irradiance)**: Direct beam radiation
-- **DHI (Diffuse Horizontal Irradiance)**: Scattered radiation
-- **Temperature**: Ambient temperature measurements
-- **Time Series**: Temporal patterns and seasonality
+* **GHI**: Global Horizontal Irradiance
+* **DNI**: Direct Normal Irradiance
+* **DHI**: Diffuse Horizontal Irradiance
+* **Temperature**: Ambient temperature
+* **Time Series**: Temporal patterns & seasonality
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these guidelines:
+We welcome contributions!
+
+**Steps to Contribute:**
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create a feature branch:
 
-### Commit Message Convention
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. Commit your changes:
+
+   ```bash
+   git commit -m "feat: add amazing feature"
+   ```
+4. Push & open a PR:
+
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+
+**Commit Message Convention**
+
 ```
-init:      Initial setup and configuration
-feat:      New features and functionality
-fix:       Bug fixes and corrections
-docs:      Documentation updates
-chore:     Maintenance tasks
+init:      Initial setup
+feat:      New feature
+fix:       Bug fix
+docs:      Documentation
+chore:     Maintenance
 ```
 
 ---
+
+Made with ❤️ by **Derese Ewunet**
