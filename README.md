@@ -1,6 +1,6 @@
 # 🌞 Solar Challenge Week 0 — Final Report
 
-*By Solar Challenge Contributors*
+*By Derese Ewunet*
 
 ---
 
