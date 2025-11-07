@@ -28,9 +28,9 @@ The datasets included:
 
 | Country      | Dataset Filename       | Observations |
 | ------------ | ---------------------- | ------------ |
-| Benin        | benin_clean.csv        | 10,000+      |
-| Sierra Leone | sierra_leone_clean.csv | 9,500+       |
-| Togo         | togo_clean.csv         | 8,800+       |
+| Benin        | benin_clean.csv        | 100,000+      |
+| Sierra Leone | sierra_leone_clean.csv | 100,000+       |
+| Togo         | togo_clean.csv         | 100,000+       |
 
 **Metrics analyzed:**
 
