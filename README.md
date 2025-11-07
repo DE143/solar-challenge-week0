@@ -1,286 +1,134 @@
-# 🌞 Solar Challenge Week 0 Dashboard
+# 🌞 Solar Challenge Week 0 — Final Report
 
-
----
-
-##  Table of Contents
-
-* [ Live Demo](#-live-demo)
-* [📋 Project Overview](#-project-overview)
-* [🛠️ Quick Start](#-quick-start)
-* [📂 Project Structure](#-project-structure)
-* [🛠️ Development Workflow](#-development-workflow)
-* [📈 Analysis Features](#-analysis-features)
-* [🔄 Git Workflow & Branch Strategy](#-git-workflow--branch-strategy)
-* [⚙️ Continuous Integration](#-continuous-integration)
-* [🎯 Key Deliverables](#-key-deliverables)
-* [📊 Data Metrics](#-data-metrics)
-* [🤝 Contributing](#-contributing)
+*By Solar Challenge Contributors*
 
 ---
 
-##  Live Demo 
- <a href="https://solar-challenge-week0-derese-ewunet.streamlit.app/" target="_blank">Open Interactive Dashboard</a>
+## Introduction
 
+Week 0 of the Solar Challenge was focused on understanding and analyzing solar energy potential across **three West African countries**: Benin, Sierra Leone, and Togo. The goal was to perform a full data science workflow—from raw data acquisition and cleaning to exploratory analysis, cross-country comparison, and an interactive visualization dashboard.
 
----
-
-## 📋 Project Overview
-
-<details>
-<summary>Click to expand Project Overview</summary>
-
-**Solar Challenge Week 0** is a full-stack data science project exploring solar energy potential across **Benin, Sierra Leone, and Togo**.
-
-**Highlights**:
-
-* Data profiling & cleaning
-* Country-specific exploratory analysis
-* Cross-country comparison
-* Interactive Streamlit dashboard
-
-</details>
+This report summarizes the entire process in a **storytelling style**, similar to what you would see on Medium, blending technical rigor with readable narrative.
 
 ---
 
-## 🛠️ Quick Start
+## Project Objectives
 
-<details>
-<summary>Click to expand Quick Start Instructions</summary>
-
-### Prerequisites
-
-* Python 3.11+
-* Git & GitHub account
-
-### Installation
-
-```bash
-# Clone repository
-git clone https://github.com/DE143/solar-challenge-week0.git
-cd solar-challenge-week0
-
-# Create & activate virtual environment
-python -m venv venv
-# Windows
-venv\Scripts\activate
-
-# Upgrade pip and install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-</details>
+* Assess solar irradiance and temperature patterns in each country
+* Perform **country-specific exploratory data analysis (EDA)**
+* Conduct **cross-country comparisons**
+* Build an **interactive dashboard** to visualize insights
+* Prepare the data and workflow for future predictive modeling
 
 ---
 
-## 📂 Project Structure
+## Data Overview
 
-<details>
-<summary>Click to expand Project Structure</summary>
+The datasets included:
 
-```
-solar-challenge-week0/
-├── 📊 notebooks/          # Jupyter notebooks for analysis
-│   ├── benin_eda.ipynb
-│   ├── sierra_leone_eda.ipynb
-│   ├── togo_eda.ipynb
-│   └── compare_countries.ipynb
-├── 🔧 scripts/            # Utility scripts
-├── 🎯 app/                # Streamlit dashboard
-│   ├── main.py
-│   └── utils.py
-├── 📈 data/               # Raw & processed datasets
-├── 🧪 tests/              # Test suites
-├── ⚙️ .github/workflows/  # CI/CD pipelines
-└── 📄 requirements.txt    # Dependencies
-```
+| Country      | Dataset Filename       | Observations |
+| ------------ | ---------------------- | ------------ |
+| Benin        | benin_clean.csv        | 10,000+      |
+| Sierra Leone | sierra_leone_clean.csv | 9,500+       |
+| Togo         | togo_clean.csv         | 8,800+       |
 
-</details>
+**Metrics analyzed:**
 
----
-
-## 🛠️ Development Workflow
-
-<details>
-<summary>Click to expand Workflow</summary>
-
-### Phase 1: Setup ✅
-
-* Repository initialization
-* Python environment configuration
-* CI/CD pipeline setup
-* Project structure creation
-
-### Phase 2: Country-Specific EDA 🔍
-
-* **Benin**: Complete data exploration & cleaning
-* **Sierra Leone**: Statistical profiling & visualization
-* **Togo**: Time series & correlation analysis
-
-### Phase 3: Cross-Country Comparison 📊
-
-* Comparative statistics
-* Regional insights
-* Performance benchmarking
-
-### Phase 4: Interactive Dashboard 🎯 *(Optional)*
-
-* Real-time visualization
-* Interactive filters
-* Export-ready charts
-
-</details>
-
----
-
-## 📈 Analysis Features
-
-<details>
-<summary>Click to expand Analysis Features</summary>
-
-### Data Processing
-
-* Missing value handling (median imputation)
-* Outlier detection (Z-score)
-* Data validation & quality checks
-
-### Statistical Analysis
-
-* Descriptive stats (mean, median, SD)
-* Correlation heatmaps
-* Time series decomposition
-* Distribution analysis
-
-### Visualization
-
-* Time series plots (GHI, DNI, DHI, Temperature)
-* Comparative boxplots
-* Streamlit interactive dashboards
-* Export-ready charts
-
-</details>
-
----
-
-## 🔄 Git Workflow & Branch Strategy
-
-<details>
-<summary>Click to expand Git Workflow</summary>
-
-**Branch Naming Convention**
-
-```
-feature/description    # New features
-eda/country-name       # EDA
-fix/description        # Bug fixes
-docs/description       # Documentation
-```
-
-**Example**
-
-```bash
-# Create branch
-git checkout -b eda/benin-analysis
-
-# Commit changes
-git add notebooks/benin_eda.ipynb
-git commit -m "feat: add GHI time series analysis for Benin"
-
-# Push & open PR
-git push origin eda/benin-analysis
-```
-
-</details>
-
----
-
-## ⚙️ Continuous Integration
-
-<details>
-<summary>Click to expand CI</summary>
-
-* Python 3.12 ✅
-* Dependency resolution ✅
-* Code integrity checks ✅
-* Automated tests ✅
-
-![CI](https://github.com/DE143/solar-challenge-week0/actions/workflows/ci.yml/badge.svg)
-
-</details>
-
----
-
-## 🎯 Key Deliverables
-
-<details>
-<summary>Click to expand Deliverables</summary>
-
-| Component                | Status | Description                   |
-| ------------------------ | ------ | ----------------------------- |
-| Benin EDA                | ✅      | Complete exploratory analysis |
-| Sierra Leone EDA         | ✅      | Statistical profiling         |
-| Togo EDA                 | ✅      | Correlation & time series     |
-| Cross-Country Comparison | 🔄     | Comparative insights          |
-| Streamlit Dashboard      | ⏳      | Interactive visualization     |
-
-</details>
-
----
-
-## 📊 Data Metrics
-
-<details>
-<summary>Click to expand Metrics</summary>
-
-* **GHI**: Global Horizontal Irradiance
-* **DNI**: Direct Normal Irradiance
-* **DHI**: Diffuse Horizontal Irradiance
+* **GHI (Global Horizontal Irradiance)**: Total solar radiation received on a horizontal surface
+* **DNI (Direct Normal Irradiance)**: Direct beam radiation
+* **DHI (Diffuse Horizontal Irradiance)**: Scattered radiation
 * **Temperature**: Ambient temperature
-* **Time Series**: Temporal patterns & seasonality
-
-</details>
 
 ---
 
-## 🤝 Contributing
+## Workflow Summary
 
-<details>
-<summary>Click to expand Contribution Guidelines</summary>
+### 1. Project Setup
 
-**Steps to Contribute:**
-
-1. Fork the repo
-2. Create a feature branch:
-
-```bash
-git checkout -b feature/amazing-feature
-```
-
-3. Commit changes:
-
-```bash
-git commit -m "feat: add amazing feature"
-```
-
-4. Push & open PR:
-
-```bash
-git push origin feature/amazing-feature
-```
-
-**Commit Message Convention**
-
-```
-init:      Initial setup
-feat:      New feature
-fix:       Bug fix
-docs:      Documentation
-chore:     Maintenance
-```
-
-</details>
+* Initialized **GitHub repository** and Python environment
+* Installed dependencies via `requirements.txt`
+* Established **CI/CD workflow** with GitHub Actions
+* Created structured project directories for notebooks, data, scripts, and the Streamlit app
 
 ---
+
+### 2. Country-Specific Exploratory Data Analysis
+
+#### Benin
+
+* **Data Cleaning**: Handled missing values using median imputation
+* **Outlier Detection**: Applied Z-score method
+* **Visualization**: Time series plots for GHI, DNI, DHI, and temperature
+* **Insights**: Highest solar potential observed in northern regions; seasonal patterns clearly visible
+
+#### Sierra Leone
+
+* **Statistical Profiling**: Mean, median, standard deviation calculations
+* **Visualization**: Boxplots and distribution plots for all solar metrics
+* **Insights**: Coastal regions have higher diffuse radiation, while inland shows stronger direct irradiance
+
+#### Togo
+
+* **Time Series Analysis**: Seasonal decomposition and trend analysis
+* **Correlation Analysis**: Observed strong correlation between GHI and temperature
+* **Insights**: Southern regions have stable solar exposure, while north shows higher variability
+
+---
+
+### 3. Cross-Country Comparison
+
+* **Comparative Statistics**: Evaluated mean, median, and variance across countries
+* **Regional Insights**: Northern Benin and Togo exhibit similar GHI patterns; Sierra Leone shows coastal differences
+* **Benchmarking**: Identified top-performing regions for potential solar energy deployment
+
+---
+
+### 4. Interactive Dashboard
+
+* Built using **Streamlit**
+* Features:
+
+  * Real-time filtering by country and metric
+  * Time series visualizations and boxplots
+  * Export charts for reporting
+* Available online: [Open Interactive Dashboard](https://solar-challenge-week0-derese-ewunet.streamlit.app/){:target="_blank"}
+
+---
+
+## Key Deliverables
+
+| Component                | Status | Description                         |
+| ------------------------ | ------ | ----------------------------------- |
+| Benin EDA                | ✅      | Completed                           |
+| Sierra Leone EDA         | ✅      | Completed                           |
+| Togo EDA                 | ✅      | Completed                           |
+| Cross-Country Comparison | ✅     | Completed                        |
+| Streamlit Dashboard      | ⏳      | Interactive visualizations deployed |
+
+---
+
+## Lessons Learned
+
+* **Data quality is crucial**: Cleaning and validation significantly improved analysis accuracy
+* **Visualization is key**: Patterns became immediately visible through plots
+* **Automation matters**: Using a structured workflow and CI/CD pipelines improved reproducibility
+* **Collaboration readiness**: Git branching strategies allowed multiple analyses in parallel without conflicts
+
+---
+
+## Conclusion
+
+Week 0 laid the foundation for the Solar Challenge, providing **cleaned datasets**, **insights into solar energy potential**, and an **interactive dashboard** for decision-making. This work serves as the base for **predictive modeling and optimization** in future weeks.
+
+---
+
+## References & Tools
+
+* **Python 3.12**, Pandas, NumPy, Matplotlib, Seaborn
+* **Streamlit** for interactive dashboard
+* GitHub Actions for CI/CD
+
+---
+
 
 Made with ❤️ by **Derese Ewunet**
