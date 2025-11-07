@@ -1,192 +1,286 @@
-# 🌞 Solar Challenge Week 0 - Comprehensive Analysis Guide
+# 🌞 Solar Challenge Week 0 Dashboard
 
-![GitHub](https://img.shields.io/badge/python-3.12-blue)
-![GitHub](https://img.shields.io/badge/status-active-success)
-![GitHub](https://img.shields.io/badge/contributions-welcome-brightgreen)
 
-🚀 Live Demo
+---
 
-🌐 Interactive Dashboard: https://solar-challenge-week0-derese-ewunet.streamlit.app/
+##  Table of Contents
+
+* [ Live Demo](#-live-demo)
+* [📋 Project Overview](#-project-overview)
+* [🛠️ Quick Start](#-quick-start)
+* [📂 Project Structure](#-project-structure)
+* [🛠️ Development Workflow](#-development-workflow)
+* [📈 Analysis Features](#-analysis-features)
+* [🔄 Git Workflow & Branch Strategy](#-git-workflow--branch-strategy)
+* [⚙️ Continuous Integration](#-continuous-integration)
+* [🎯 Key Deliverables](#-key-deliverables)
+* [📊 Data Metrics](#-data-metrics)
+* [🤝 Contributing](#-contributing)
+
+---
+
+##  Live Demo 
+ <a href="https://solar-challenge-week0-derese-ewunet.streamlit.app/" target="_blank">Open Interactive Dashboard</a>
+
+
 ---
 
 ## 📋 Project Overview
 
-A comprehensive data analysis project exploring solar energy potential across three West African countries: **Benin, Sierra Leone, and Togo**. This project demonstrates end-to-end data science workflow from raw data processing to interactive visualization.
+<details>
+<summary>Click to expand Project Overview</summary>
+
+**Solar Challenge Week 0** is a full-stack data science project exploring solar energy potential across **Benin, Sierra Leone, and Togo**.
+
+**Highlights**:
+
+* Data profiling & cleaning
+* Country-specific exploratory analysis
+* Cross-country comparison
+* Interactive Streamlit dashboard
+
+</details>
 
 ---
 
-## 🚀 Quick Start
+## 🛠️ Quick Start
+
+<details>
+<summary>Click to expand Quick Start Instructions</summary>
 
 ### Prerequisites
-- Python 3.11+
-- Git
-- GitHub Account
 
-### Installation & Setup
+* Python 3.11+
+* Git & GitHub account
+
+### Installation
 
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/DE143/solar-challenge-week0.git
 cd solar-challenge-week0
 
-# Create and activate virtual environment
+# Create & activate virtual environment
 python -m venv venv
-
 # Windows
 venv\Scripts\activate
-
-
 
 # Upgrade pip and install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+</details>
+
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
+
+<details>
+<summary>Click to expand Project Structure</summary>
 
 ```
 solar-challenge-week0/
-├── 📊 notebooks/           # Jupyter notebooks for analysis
+├── 📊 notebooks/          # Jupyter notebooks for analysis
 │   ├── benin_eda.ipynb
 │   ├── sierra_leone_eda.ipynb
 │   ├── togo_eda.ipynb
 │   └── compare_countries.ipynb
-├── 🔧 scripts/             # Utility scripts
-├── 🎯 app/                 # Streamlit dashboard
+├── 🔧 scripts/            # Utility scripts
+├── 🎯 app/                # Streamlit dashboard
 │   ├── main.py
 │   └── utils.py
-├── 📈 data/               # Raw and processed datasets
+├── 📈 data/               # Raw & processed datasets
 ├── 🧪 tests/              # Test suites
 ├── ⚙️ .github/workflows/  # CI/CD pipelines
-└── 📄 requirements.txt    # Project dependencies
+└── 📄 requirements.txt    # Dependencies
 ```
+
+</details>
 
 ---
 
 ## 🛠️ Development Workflow
 
-### Phase 1: Project Setup ✅
-- [x] Repository initialization
-- [x] Python environment configuration
-- [x] CI/CD pipeline setup
-- [x] Project structure creation
+<details>
+<summary>Click to expand Workflow</summary>
+
+### Phase 1: Setup ✅
+
+* Repository initialization
+* Python environment configuration
+* CI/CD pipeline setup
+* Project structure creation
 
 ### Phase 2: Country-Specific EDA 🔍
-- **Benin Analysis** - Complete data exploration and cleaning
-- **Sierra Leone Analysis** - Statistical profiling and visualization
-- **Togo Analysis** - Time series and correlation analysis
+
+* **Benin**: Complete data exploration & cleaning
+* **Sierra Leone**: Statistical profiling & visualization
+* **Togo**: Time series & correlation analysis
 
 ### Phase 3: Cross-Country Comparison 📊
-- Comparative statistical analysis
-- Performance benchmarking
-- Regional insights generation
 
-### Phase 4: Interactive Dashboard 🎯 (Optional)
-- Real-time data visualization
-- Interactive filtering capabilities
-- Export functionality
+* Comparative statistics
+* Regional insights
+* Performance benchmarking
+
+### Phase 4: Interactive Dashboard 🎯 *(Optional)*
+
+* Real-time visualization
+* Interactive filters
+* Export-ready charts
+
+</details>
 
 ---
 
 ## 📈 Analysis Features
 
+<details>
+<summary>Click to expand Analysis Features</summary>
+
 ### Data Processing
-- **Missing Value Handling**: Median imputation strategies
-- **Outlier Detection**: Z-score based anomaly identification
-- **Data Validation**: Quality assurance checks
+
+* Missing value handling (median imputation)
+* Outlier detection (Z-score)
+* Data validation & quality checks
 
 ### Statistical Analysis
-- Descriptive statistics (mean, median, standard deviation)
-- Correlation analysis and heatmaps
-- Time series decomposition
-- Distribution analysis
+
+* Descriptive stats (mean, median, SD)
+* Correlation heatmaps
+* Time series decomposition
+* Distribution analysis
 
 ### Visualization
-- Time series plots for GHI, DNI, DHI, and temperature
-- Comparative boxplots across countries
-- Interactive dashboards with Streamlit
-- Export-ready charts and graphs
+
+* Time series plots (GHI, DNI, DHI, Temperature)
+* Comparative boxplots
+* Streamlit interactive dashboards
+* Export-ready charts
+
+</details>
 
 ---
 
 ## 🔄 Git Workflow & Branch Strategy
 
-### Branch Naming Convention
+<details>
+<summary>Click to expand Git Workflow</summary>
+
+**Branch Naming Convention**
+
 ```
 feature/description    # New features
-eda/country-name       # Exploratory data analysis
+eda/country-name       # EDA
 fix/description        # Bug fixes
-docs/description       # Documentation updates
+docs/description       # Documentation
 ```
 
-### Example Workflow
+**Example**
+
 ```bash
-# Create feature branch
+# Create branch
 git checkout -b eda/benin-analysis
 
-# Develop and commit frequently
+# Commit changes
 git add notebooks/benin_eda.ipynb
 git commit -m "feat: add GHI time series analysis for Benin"
 
-# Push and create PR
+# Push & open PR
 git push origin eda/benin-analysis
 ```
+
+</details>
 
 ---
 
 ## ⚙️ Continuous Integration
 
-Our GitHub Actions workflow ensures:
-- ✅ Python 3.12 compatibility
-- ✅ Dependency resolution
-- ✅ Code integrity checks
-- ✅ Automated testing readiness
+<details>
+<summary>Click to expand CI</summary>
 
-**Status**: ![CI](https://github.com/DE143/solar-challenge-week0/actions/workflows/ci.yml/badge.svg)
+* Python 3.12 ✅
+* Dependency resolution ✅
+* Code integrity checks ✅
+* Automated tests ✅
+
+![CI](https://github.com/DE143/solar-challenge-week0/actions/workflows/ci.yml/badge.svg)
+
+</details>
 
 ---
 
 ## 🎯 Key Deliverables
 
-| Component | Status | Description |
-|-----------|--------|-------------|
-| Benin EDA | ✅ | Complete exploratory analysis |
-| Sierra Leone EDA | ✅ | Statistical profiling |
-| Togo EDA | ✅ | Correlation & time series |
-| Cross-Country Comparison | 🔄 | Comparative insights |
-| Streamlit Dashboard | ⏳ | Interactive visualization |
+<details>
+<summary>Click to expand Deliverables</summary>
+
+| Component                | Status | Description                   |
+| ------------------------ | ------ | ----------------------------- |
+| Benin EDA                | ✅      | Complete exploratory analysis |
+| Sierra Leone EDA         | ✅      | Statistical profiling         |
+| Togo EDA                 | ✅      | Correlation & time series     |
+| Cross-Country Comparison | 🔄     | Comparative insights          |
+| Streamlit Dashboard      | ⏳      | Interactive visualization     |
+
+</details>
 
 ---
 
-## 📊 Data Metrics Analyzed
+## 📊 Data Metrics
 
-- **GHI (Global Horizontal Irradiance)**: Total solar radiation received
-- **DNI (Direct Normal Irradiance)**: Direct beam radiation
-- **DHI (Diffuse Horizontal Irradiance)**: Scattered radiation
-- **Temperature**: Ambient temperature measurements
-- **Time Series**: Temporal patterns and seasonality
+<details>
+<summary>Click to expand Metrics</summary>
+
+* **GHI**: Global Horizontal Irradiance
+* **DNI**: Direct Normal Irradiance
+* **DHI**: Diffuse Horizontal Irradiance
+* **Temperature**: Ambient temperature
+* **Time Series**: Temporal patterns & seasonality
+
+</details>
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these guidelines:
+<details>
+<summary>Click to expand Contribution Guidelines</summary>
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+**Steps to Contribute:**
 
-### Commit Message Convention
+1. Fork the repo
+2. Create a feature branch:
+
+```bash
+git checkout -b feature/amazing-feature
 ```
-init:      Initial setup and configuration
-feat:      New features and functionality
-fix:       Bug fixes and corrections
-docs:      Documentation updates
-chore:     Maintenance tasks
+
+3. Commit changes:
+
+```bash
+git commit -m "feat: add amazing feature"
 ```
+
+4. Push & open PR:
+
+```bash
+git push origin feature/amazing-feature
+```
+
+**Commit Message Convention**
+
+```
+init:      Initial setup
+feat:      New feature
+fix:       Bug fix
+docs:      Documentation
+chore:     Maintenance
+```
+
+</details>
 
 ---
+
+Made with ❤️ by **Derese Ewunet**
