@@ -1,14 +1,11 @@
 # 🌞 Solar Challenge Week 0 Dashboard
 
-![Python](https://img.shields.io/badge/python-3.12-blue?style=flat-square)
-![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
-![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square)
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
-* [🚀 Live Demo](#-live-demo)
+* [ Live Demo](#-live-demo)
 * [📋 Project Overview](#-project-overview)
 * [🛠️ Quick Start](#-quick-start)
 * [📂 Project Structure](#-project-structure)
@@ -22,9 +19,9 @@
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo 
+ <a href="https://solar-challenge-week0-derese-ewunet.streamlit.app/" target="_blank">Open Interactive Dashboard</a>
 
-🔗 [Open Interactive Dashboard](https://solar-challenge-week0-derese-ewunet.streamlit.app/){:target="_blank"}
 
 ---
 
@@ -286,4 +283,4 @@ chore:     Maintenance
 
 ---
 
-Made with ❤️ by **Solar Challenge Contributors**
+Made with ❤️ by **Derese Ewunet**
